@@ -1,0 +1,316 @@
+/* My codes */
+* {
+  text-decoration: none;
+}
+main {
+  padding-top: 100px;
+}
+/* header */
+header {
+  height: 100px;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+header .brand {
+  font-size: 24px;
+  font-weight: 800;
+  color: #111;
+  font-family: 'Catamaran';
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+header nav ul {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+header nav ul li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 0 16px;
+}
+header nav ul li a {
+  font-size: 16px;
+  color: #111;
+  font-family: 'Catamaran';
+  text-transform: uppercase;
+}
+header .cases {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  header .brand {
+    margin: 31px 0;
+    text-align: left;
+    padding: 0 20px 0 40px;
+    border-right: 3px solid #111;
+    float: left;
+    line-height: 38px;
+  }
+  header nav ul {
+    margin: 20px 0 0 15px;
+    float: left;
+  }
+  header nav ul li a {
+    line-height: 60px;
+  }
+  header .cases {
+    display: block;
+    font-size: 16px;
+    color: #111;
+    font-family: 'Catamaran';
+    text-transform: uppercase;
+    line-height: 38px;
+    border: 1px solid #111;
+    float: right;
+    margin-right: 40px;
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+}
+/* section banner */
+.banner {
+  background-image: url('../img/webdev.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: table;
+}
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+.banner h2{
+  font-size: 60px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 70px;
+  font-family: 'Catamaran';
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+.banner h1{
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 100;
+  line-height: 40px;
+  color: #fff;
+  font-family: 'Cormorant Garamond';
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+@media only screen and (min-width: 1000px) {
+  .banner h1{
+    width: 568px;
+    margin: 0 auto;
+  }
+}
+/* section links */
+.boxlinks div {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #f2f2f2;
+  font-family: 'Catamaran';
+}
+.boxlinks div h3{
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 100px;
+  color: #111;
+  font-family: 'Catamaran';
+  text-align: center;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .boxlinks {
+    overflow: hidden;
+  }
+  .boxlinks div {
+    margin: 20px 10px 0;
+    height: 220px;
+    float: left;
+  }
+  .box-square {
+    width: calc(25% - 20px) !important;
+  }
+  .box-rectangle {
+    width: calc(50% - 20px) !important;
+  }
+  .boxlinks div h3{
+    line-height: 220px;
+  }
+}
+
+/* section cases */
+.case-links div {
+  margin: 16px 16px 0;
+  width: calc(100% - 31px);
+  height: 100px;
+  background-color: #f2f2f2;
+}
+.case-links div h2{
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 100px;
+  color: #111;
+  font-family: 'Catamaran';
+  text-align: center;
+  text-transform: uppercase;
+}
+.case-links h3{
+  display: none;
+}
+.case-links .contact-info {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .case-links {
+    overflow: hidden;
+  }
+  .case-links div {
+    margin: 20px 10px 0;
+    width: 230px;
+    height: 230px;
+    float: left;
+  }
+  .case-links div h2{
+    padding-top: 28%;
+  }
+  .case-links h3{
+    font-size: 20px;
+    padding-left: 10px;
+    color: #111;
+    font-family: 'Catamaran';
+    text-transform: uppercase;
+    display: block;
+  }
+  .case-links .contact-info {
+    display: table;
+    width: 980px;
+  }
+  .middle {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .case-links .contact-info h4 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    font-family: 'Catamaran';
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .case-links .contact-info small {
+    font-size: 14px;
+    color: #111;
+    font-family: 'Catamaran';
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+/* cases */
+.case-vid {
+  margin-bottom: 24px;
+}
+.case-vid video{
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+}
+.case-vid h2 {
+  text-align: center;
+}
+.case-vid h2,
+.case-vid h3 {
+  font-size: 20px;
+  padding-left: 10px;
+  color: #111;
+  font-family: 'Catamaran';
+  text-transform: uppercase;
+  display: block;
+}
+.case-vid p{
+  margin-top: 20px;
+  padding-left: 10px;
+  font-weight: 200;
+  line-height: 24px;
+  color: #111;
+  font-family: 'Catamaran';
+  display: block;
+}
+@media only screen and (min-width: 1000px) {
+.case-vid p{
+  column-count: 3;
+  column-gap: 40px;
+}
+}
+/* footer */
+footer {
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  background-color: #111;
+  color: #fff;
+  font-family: 'Catamaran';
+  margin-top: 14px;
+  overflow: hidden;
+}
+footer ul{
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+}
+footer ul li {
+  list-style: none;
+  display: block;
+}
+footer ul li p {
+  color: #fff;
+  text-decoration: none;
+  line-height: 45px;
+}
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 45px;
+}
+.footer-adlinks {
+  display: none;
+}
+.footer-sm{
+  width: 60px;
+  float: right;
+}
+.footer-sm img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 1000px) {
+  .footer-adlinks {
+    display: block;
+  }
+  .footer-nav {
+    margin-right: 60px;
+  }
+  .footer-adlinks li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 45px;
+  }
+}
